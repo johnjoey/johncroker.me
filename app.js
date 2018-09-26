@@ -117,6 +117,6 @@ app.use('/articles', articles)
 app.use('/users', users)
 
 // Start server
-app.listen('3001', () => {
-    console.log('Server started on port 3001')
+app.listen('80', () => {
+    console.log('Server started on port 80')
 })
