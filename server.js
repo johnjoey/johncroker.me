@@ -9,8 +9,19 @@ app.use(bodyParser.json())
 app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'views'))
 
-app.get('/', (req, res) => {
-    res.render('index')  
+app.get('/api/portfolio', (req, res) => {
+    let portfolio = [
+        {id: 1, name: 'Mortgage Sleep Out', url: 'http://www.mortgagesleepout.com/', date: '2018'},
+        {id: 2, name: 'Financial Reporter', url: 'https://www.financialreporter.co.uk/', date: '2018'},
+        {id: 3, name: '#FRWRA', url: 'https://frwra.co.uk/', date: '2018'},
+        {id: 4, name: 'Specialist Lending Roadshow', url: 'https://www.specialistlendingroadshow.co.uk/', date: '2018'},
+        {id: 5, name: 'Front Events', url: 'http://frontevents.co.uk/', date: '2018'},
+        {id: 6, name: 'Financial Services Expo', url: 'http://www.financialservicesexpo.co.uk/', date: '2018'},
+        {id: 7, name: 'FS Cup', url: 'http://fs-cup.co.uk/', date: '2018'},
+        {id: 8, name: 'NMA Awards', url: 'http://nma-awards.co.uk/', date: '2018'},
+    ]
+
+    res.json(portfolio)  
 })
 
 app.get('/cv', (req, res) => {
@@ -21,6 +32,5 @@ app.get('/cv', (req, res) => {
     })
 })
 
-app.listen('80', () => {
-    console.log('Server started on port 80')
-})
+const port = 5000
+app.listen(port, () => {console.log(`Server started on port ${port}`)})
