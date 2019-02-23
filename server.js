@@ -11,14 +11,14 @@ app.set('views', path.join(__dirname, 'views'))
 
 app.get('/api/portfolio', (req, res) => {
     let portfolio = [
-        {id: 1, name: 'Mortgage Sleep Out', url: 'http://www.mortgagesleepout.com/', date: '2018'},
-        {id: 2, name: 'Financial Reporter', url: 'https://www.financialreporter.co.uk/', date: '2018'},
-        {id: 3, name: '#FRWRA', url: 'https://frwra.co.uk/', date: '2018'},
-        {id: 4, name: 'Specialist Lending Roadshow', url: 'https://www.specialistlendingroadshow.co.uk/', date: '2018'},
-        {id: 5, name: 'Front Events', url: 'http://frontevents.co.uk/', date: '2018'},
-        {id: 6, name: 'Financial Services Expo', url: 'http://www.financialservicesexpo.co.uk/', date: '2018'},
-        {id: 7, name: 'FS Cup', url: 'http://fs-cup.co.uk/', date: '2018'},
-        {id: 8, name: 'NMA Awards', url: 'http://nma-awards.co.uk/', date: '2018'},
+        {id: 1, name: 'Financial Services Expo', url: 'https://www.financialservicesexpo.co.uk/', date: '2018', description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+        {id: 2, name: 'Mortgage Sleep Out', url: 'http://www.mortgagesleepout.com/', date: '2018', description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+        {id: 3, name: 'Financial Reporter', url: 'https://www.financialreporter.co.uk/', date: '2018', description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+        {id: 4, name: '#FRWRA', url: 'https://frwra.co.uk/', date: '2018', description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+        {id: 5, name: 'Specialist Lending Roadshow', url: 'https://www.specialistlendingroadshow.co.uk/', date: '2018', description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+        {id: 6, name: 'Front Events', url: 'http://frontevents.co.uk/', date: '2018', description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+        {id: 7, name: 'FS Cup', url: 'http://fs-cup.co.uk/', date: '2018', description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+        {id: 8, name: 'NMA Awards', url: 'http://nma-awards.co.uk/', date: '2018', description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
     ]
 
     res.json(portfolio)  

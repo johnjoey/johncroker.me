@@ -1,0 +1,28 @@
+.portfolio {
+    $self: &;
+    list-style: none;
+    margin:20px 0 0 0;
+    padding:0;
+    text-align:right;
+    width:100%;
+    max-width:600px;
+    float:right;
+    overflow-y: scroll;
+    max-height:100vh;
+    display:none;
+
+    &.open {
+        display: block;
+    }
+    
+    &__item {
+        padding:0 0 20px;
+
+        #{$self}__title {
+            font-size: 3rem;
+        }
+        #{$self}__desc {
+            font-size: 1.4rem;
+        }
+    }
+  }

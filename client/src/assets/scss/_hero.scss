@@ -1,0 +1,56 @@
+.hero {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero__inner {
+    border: 5px solid #fff;
+    max-width: 320px;
+  }
+  
+  .hero__logo {
+    background-color: #fff;
+    img {
+      width: 100%;
+    }
+  }
+  
+  .titles {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .titles__left {
+    width: 50%;
+  }
+  
+  .titles__right {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .titles__name {
+    font-size: 9vh;
+    word-wrap: break-word;
+  }
+  
+  .titles__job {
+    font-size: 5vh;
+    word-break: break-word;
+    text-align: right;
+  }
+  
+  .titles__greeting {
+    font-size: 15vh;
+    font-weight: bold;
+    align-self: flex-end;
+    text-align: right;
+    width: 100%;
+  }
